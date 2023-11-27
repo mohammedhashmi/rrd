@@ -1,4 +1,5 @@
-import React, {useParams} from "react";
+import { useParams } from "react-router-dom";
+
 export function Book() {
   const { id } = useParams()
   return (
