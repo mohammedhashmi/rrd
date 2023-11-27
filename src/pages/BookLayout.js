@@ -14,7 +14,7 @@ export function BookLayout () {
           <Link to="/books/2">Second Book</Link>
         </li>
       </ul>
-      <Outlet />
+      <Outlet context={{hello: "world"}}/>
     </>
   )
 }
