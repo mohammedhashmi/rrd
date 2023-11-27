@@ -1,6 +1,7 @@
 import React, {useContext} from "react"
 import ComponentC from "./ComponentC"
-import {UserContext} from "../App"
+import { UserContext } from "./ComponentA"
+
 function ComponentB() {
   const user = useContext(UserContext)
   return(
