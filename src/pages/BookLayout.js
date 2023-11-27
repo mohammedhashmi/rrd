@@ -5,16 +5,16 @@ export function BookLayout () {
     <>
       <ul>
         <li>
-          <Link to="new">New</Link>
+          <Link to="/books/new">New</Link>
         </li>
         <li>
-          <Link to="1">First Book</Link>
+          <Link to="/books/1">First Book</Link>
         </li>
         <li>
-          <Link to="2">Second Book</Link>
+          <Link to="/books/2">Second Book</Link>
         </li>
       </ul>
-      <Outlet context={{hello: 'world'}}/>
+      <Outlet />
     </>
   )
 }
