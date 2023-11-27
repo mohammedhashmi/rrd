@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import ComponentA from './components/ComponentA';
-import { Link, Route, Routes } from 'react-router-dom';
+import { NavLink, Link, Route, Routes } from 'react-router-dom';
 import { NotFound } from './pages/NotFound';
 import { BookRoutes } from './pages/BookRoutes';
 
@@ -11,10 +11,10 @@ function App() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/books">Books</Link>
+            <NavLink to="/books">Books</NavLink>
           </li>
         </ul>
       </nav>
