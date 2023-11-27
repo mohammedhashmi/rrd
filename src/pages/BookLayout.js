@@ -1,6 +1,8 @@
-import { Link, Outlet } from "react-router-dom"
+import { Link, Outlet, useSearchParams } from "react-router-dom"
 
 export function BookLayout () {
+  const [searchParams, setSearchParams] = useSearchParams({search: 3})
+  const number = searchParams.get("search")
   return(
     <>
       <ul>
@@ -14,6 +16,7 @@ export function BookLayout () {
           <Link to="/books/2">Second Book</Link>
         </li>
       </ul>
+      <input type='number' value={number} onChange={e => setSearchParams({search: e.target.value})}/>
       <Outlet context={{hello: "world"}}/>
     </>
   )
